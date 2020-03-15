@@ -3,6 +3,7 @@
     {
       "type": "Feature",
       "properties": {
+        "color" : "#3af24b",
         "base_height": "",
         "height": 3
       },
@@ -38,6 +39,7 @@
     {
       "type": "Feature",
       "properties": {
+        "color" : "#3af24b",
         "base_height": "",
         "height": 3
       },
@@ -73,6 +75,7 @@
     {
       "type": "Feature",
       "properties": {
+        "color" : "#3af24b",
         "base_height": 0,
         "height": 3
       },
