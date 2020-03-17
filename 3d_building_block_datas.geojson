@@ -18046,7 +18046,7 @@
       "type": "Feature",
       "properties": {
         "base_height": 49,
-        "color": "#3af24b",
+        "color": "#8c8e8a",
         "height": 53
       },
       "geometry": {
@@ -18347,7 +18347,7 @@
       "type": "Feature",
       "properties": {
         "base_height": 63,
-        "color": "#3af24b",
+        "color": "#8c8e8a",
         "height": 67
       },
       "geometry": {
