@@ -17405,7 +17405,7 @@
       "type": "Feature",
       "properties": {
         "base_height": 21,
-        "color": "#8c8e8a",
+        "color": "#3af24b",
         "height": 25
       },
       "geometry": {
@@ -17478,7 +17478,7 @@
       "properties": {
         "base_height": 21,
         "height": 25,
-        "color": "#3af24b"
+        "color": "#8c8e8a"
       },
       "geometry": {
         "coordinates": [
@@ -17662,7 +17662,7 @@
       "type": "Feature",
       "properties": {
         "base_height": 28,
-        "color": "#3af24b",
+        "color": "#8c8e8a",
         "height": 32
       },
       "geometry": {
@@ -17705,7 +17705,7 @@
       "type": "Feature",
       "properties": {
         "base_height": 35,
-        "color": "#8c8e8a",
+        "color": "#3af24b",
         "height": 39
       },
       "geometry": {
