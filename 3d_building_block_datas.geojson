@@ -17627,7 +17627,7 @@
       "properties": {
         "base_height": 28,
         "height": 32,
-        "color": "#3af24b"
+        "color": "#ffff00"
       },
       "geometry": {
         "coordinates": [
@@ -17930,7 +17930,7 @@
       "properties": {
         "base_height": 42,
         "height": 46,
-        "color": "#3af24b"
+        "color": "#ffff00"
       },
       "geometry": {
         "coordinates": [
