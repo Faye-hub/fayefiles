@@ -1,0 +1,59 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "impots_fonciers_minimum_3pieces": "",
+        "commune": "Plateau",
+        "impots_fonciers_minimum_4pieces": "",
+        "nb_vl_commune": 3,
+        "color": "#dcdcdc",
+        "nom": "VL1",
+        "impots_fonciers_minimum_studio": "",
+        "impots_fonciers_minimum_mag": "",
+        "impots_fonciers_minimum_2pieces": ""
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.017355,
+              5.314056
+            ],
+            [
+              -4.020225,
+              5.312889
+            ],
+            [
+              -4.028383,
+              5.317296
+            ],
+            [
+              -4.028239,
+              5.320892
+            ],
+            [
+              -4.028096,
+              5.324489
+            ],
+            [
+              -4.019603,
+              5.324132
+            ],
+            [
+              -4.019484,
+              5.317343
+            ],
+            [
+              -4.017355,
+              5.314056
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "e081237301dfbd1d8cecb5d81e448897"
+    }
+  ],
+  "type": "FeatureCollection"
+}
