@@ -3,6 +3,7 @@
     {
       "type": "Feature",
       "properties": {
+        "val_loc": "200 000 F",
         "impots_fonciers_minimum_3pieces": "",
         "commune": "Plateau",
         "impots_fonciers_minimum_4pieces": "",
