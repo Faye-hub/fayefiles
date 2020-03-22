@@ -19670,12 +19670,12 @@
       "id": "8313f53b4c3e08005b30dbedf78ab4e0_c_6_2"
     },
 
-{
+ {
       "type": "Feature",
       "properties": {
         "color": "#3af24b",
         "height": 66,
-        "ncc": "745896F",
+        "ncc": "854769F",
         "impots_fonciers_payes": "1 080 000 F",
         "copropriete": "Location",
         "base_height": 61,
@@ -19687,26 +19687,25 @@
         "coordinates": [
           [
             [
-              -4.021395,
-              5.322266
+              -4.021198,
+              5.322264
             ],
             [
-              -4.021206,
-              5.322263
-            ],
-            [
-              -4.021207,
+              -4.0212,
               5.322173
             ],
             [
-              -4.021396,
-              5.322175
+              -4.021011,
+              5.322169
             ],
             [
-              -4.021395,
-              5.322266
+              -4.021011,
+              5.322261
+            ],
+            [
+              -4.021198,
+              5.322264
             ]
-
           ]
         ],
         "type": "Polygon"
@@ -19719,13 +19718,13 @@
       "properties": {
         "color": "#ff7f00",
         "height": 66,
-        "ncc": "658741C",
-        "impots_fonciers_payes": "540 000 F",
-        "copropriete": "Location",
+        "ncc": "874526C",
+        "impots_fonciers_payes": "108 000 F",
+        "copropriete": "Principale",
         "base_height": 61,
         "nb_de_pieces": 3,
         "type": "Appartement",
-        "impots_fonciers_dus": "540 000 F"
+        "impots_fonciers_dus": "720 000 F"
       },
       "geometry": {
         "coordinates": [
@@ -19762,13 +19761,13 @@
       "properties": {
         "color": "#ff7f00",
         "height": 74,
-        "ncc": "854712H",
-        "impots_fonciers_payes": "108 000 F",
-        "copropriete": "Location",
+        "ncc": "748932D",
+        "impots_fonciers_payes": "144 000 F",
+        "copropriete": "Principale",
         "base_height": 69,
-        "nb_de_pieces": 4,
+        "nb_de_pieces": 3,
         "type": "Appartement",
-        "impots_fonciers_dus": "720 000 F"
+        "impots_fonciers_dus": "540 000 F"
       },
       "geometry": {
         "coordinates": [
@@ -19805,13 +19804,13 @@
       "properties": {
         "color": "#ff7f00",
         "height": 74,
-        "ncc": "544789C",
+        "ncc": "547441F",
         "impots_fonciers_payes": "144 000 F",
         "copropriete": "Principale",
         "base_height": 69,
         "nb_de_pieces": 3,
         "type": "Appartement",
-        "impots_fonciers_dus": "288 000 F"
+        "impots_fonciers_dus": "540 000 F"
       },
       "geometry": {
         "coordinates": [
@@ -19848,7 +19847,7 @@
       "properties": {
         "color": "#3af24b",
         "height": 82,
-        "ncc": "857421F",
+        "ncc": "574321A",
         "impots_fonciers_payes": "540 000 F",
         "copropriete": "Location",
         "base_height": 77,
@@ -19860,26 +19859,25 @@
         "coordinates": [
           [
             [
-              -4.021395,
-              5.322266
+              -4.021198,
+              5.322264
             ],
             [
-              -4.021206,
-              5.322263
-            ],
-            [
-              -4.021207,
+              -4.0212,
               5.322173
             ],
             [
-              -4.021396,
-              5.322175
+              -4.021011,
+              5.322169
             ],
             [
-              -4.021395,
-              5.322266
+              -4.021011,
+              5.322261
+            ],
+            [
+              -4.021198,
+              5.322264
             ]
-
           ]
         ],
         "type": "Polygon"
@@ -19892,13 +19890,13 @@
       "properties": {
         "color": "#3af24b",
         "height": 82,
-        "ncc": "965478F",
-        "impots_fonciers_payes": "540 000 F",
+        "ncc": "524123B",
+        "impots_fonciers_payes": "1 080 000 F",
         "copropriete": "Location",
         "base_height": 77,
         "nb_de_pieces": 3,
         "type": "Appartement",
-        "impots_fonciers_dus": "540 000 F"
+        "impots_fonciers_dus": "1 080 000 F"
       },
       "geometry": {
         "coordinates": [
@@ -19934,11 +19932,11 @@
       "type": "Feature",
       "properties": {
         "color": "#ff7f00",
-        "height": 90,
-        "ncc": "745213C",
+        "height": 58,
+        "ncc": "576489E",
         "impots_fonciers_payes": "144 000 F",
-        "copropriete": "Location",
-        "base_height": 85,
+        "copropriete": "Principale",
+        "base_height": 53,
         "nb_de_pieces": 3,
         "type": "Appartement",
         "impots_fonciers_dus": "540 000 F"
@@ -19978,9 +19976,9 @@
       "properties": {
         "color": "#ff7f00",
         "height": 90,
-        "ncc": "954123F",
+        "ncc": "742697F",
         "impots_fonciers_payes": "144 000 F",
-        "copropriete": "Location",
+        "copropriete": "Principale",
         "base_height": 85,
         "nb_de_pieces": 3,
         "type": "Appartement",
@@ -20014,7 +20012,7 @@
         "type": "Polygon"
       },
       "id": "8313f53b4c3e08005b30dbedf78ab4e0_c_10_2"
-    }    
+    }
         
     
     
