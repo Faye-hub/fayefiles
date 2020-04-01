@@ -1,5 +1,4 @@
-{
-  "type" : "FeatureCollection", 
+{ 
   "features" : [
     {
       "type" : "Feature", 
@@ -3781,5 +3780,6 @@
         "Recovered" : 0
       }
     }
-  ]
+  ],
+  "type" : "FeatureCollection"
 }
