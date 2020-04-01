@@ -1173,7 +1173,8 @@
         "Long_" : -5.5471, 
         "Confirmed" : 179, 
         "Deaths" : 1, 
-        "Recovered" : 7
+        "Recovered" : 7,
+        "color" : "#fed136"
       }
     }, 
     {
