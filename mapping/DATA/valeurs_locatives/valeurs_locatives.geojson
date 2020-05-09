@@ -1,0 +1,70 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "commune": "Plateau",
+        "nb_vl_commune": 3,
+        "color": "#582900",
+        "val_loc": "200 000 F",
+        "nvl": "VL1_plateau",
+
+        "ifm_mag_studio_location": "288 000 F",
+        "ifm_2pieces_location": "576 000 F",
+        "ifm_3pieces_location": "864 000 F",
+        "ifm_4pieces_location": "1 152 000 F",
+
+        "ifm_mag_studio_principale": "72 000 F",
+        "ifm_2pieces_principale": "144 000 F",
+        "ifm_3pieces_principale": "216 000 F",
+        "ifm_4pieces_principale": "288 000 F",
+
+        "ifm_mag_studio_societe": "360 000 F",
+        "ifm_2pieces_societe": "720 000 F",
+        "ifm_3pieces_societe": "1 080 000 F",
+        "ifm_4pieces_societe": "1 440 000 F"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.017355,
+              5.314056
+            ],
+            [
+              -4.020225,
+              5.312889
+            ],
+            [
+              -4.028383,
+              5.317296
+            ],
+            [
+              -4.028239,
+              5.320892
+            ],
+            [
+              -4.028096,
+              5.324489
+            ],
+            [
+              -4.019603,
+              5.324132
+            ],
+            [
+              -4.019484,
+              5.317343
+            ],
+            [
+              -4.017355,
+              5.314056
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "e081237301dfbd1d8cecb5d81e448897"
+    }
+  ],
+  "type": "FeatureCollection"
+}

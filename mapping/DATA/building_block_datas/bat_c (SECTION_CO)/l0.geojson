@@ -1,0 +1,89 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "color": "#ff7f00",
+        "height": 5,
+        "ncc": "123456A",
+        "impots_fonciers_payes": "126 000 F",
+        "copropriete": "Location",
+        "base_height": "",
+        "nb_de_pieces": 8,
+        "type": "Commerce",
+        "impots_fonciers_dus": "1 440 000 F"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.021395,
+              5.322266
+            ],
+            [
+              -4.021206,
+              5.322263
+            ],
+            [
+              -4.021207,
+              5.322173
+            ],
+            [
+              -4.021396,
+              5.322175
+            ],
+            [
+              -4.021395,
+              5.322266
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "147f92752ffd977f954ab25a62c09162"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "color": "#ff7f00",
+        "height": 5,
+        "ncc": "988757B",
+        "impots_fonciers_payes": "108 000 F",
+        "copropriete": "3 L et 3 P",
+        "base_height": 0,
+        "nb_de_pieces": 6,
+        "type": "Appartement",
+        "impots_fonciers_dus": "684 000 F"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.021198,
+              5.322264
+            ],
+            [
+              -4.0212,
+              5.322173
+            ],
+            [
+              -4.021011,
+              5.322169
+            ],
+            [
+              -4.021011,
+              5.322261
+            ],
+            [
+              -4.021198,
+              5.322264
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "8313f53b4c3e08005b30dbedf78ab4e0"
+    }
+  ],
+  "type": "FeatureCollection"
+}

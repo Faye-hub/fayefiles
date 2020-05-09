@@ -1,0 +1,944 @@
+{
+      "type": "Feature",
+      "properties": {
+        "arrieres": "0 F",
+        "color": "#ff7f00",
+        "ecart": "113 400 F",
+        "height": 5,
+        "nat_occup": "Principale",
+        "ncc": "649521N",
+        "base_height": 0,
+        "nb_de_pieces": 3,
+        "type": "Studio"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015722,
+              5.323182
+            ],
+            [
+              -4.015726,
+              5.323089
+            ],
+            [
+              -4.015632,
+              5.323085
+            ],
+            [
+              -4.015629,
+              5.323179
+            ],
+            [
+              -4.015722,
+              5.323182
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "82ceb9f354d31e204dc816cc6ec7d961_d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrieres": "1 152 000 F",
+        "color": "#9f3c2c",
+        "ecart": "0 F",
+        "height": 5,
+        "nat_occup": "Location",
+        "ncc": "847452A",
+        "base_height": "",
+        "nb_de_pieces": 4,
+        "type": "Commerce"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015822,
+              5.323186
+            ],
+            [
+              -4.015825,
+              5.323093
+            ],
+            [
+              -4.015735,
+              5.32309
+            ],
+            [
+              -4.015731,
+              5.323183
+            ],
+            [
+              -4.015822,
+              5.323186
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "e51e50351dcddf078f6dfb4a2707b84b_d"
+    },
+
+
+{
+      "type": "Feature",
+      "properties": {
+        "arrieres": "576 000 F",
+        "color": "#9f3c2c",
+        "ecart": "0 F",
+        "height": 13,
+        "nat_occup": "Location",
+        "ncc": "785421T",
+        "base_height": 8,
+        "nb_de_pieces": 2,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015722,
+              5.323182
+            ],
+            [
+              -4.015726,
+              5.323089
+            ],
+            [
+              -4.015632,
+              5.323085
+            ],
+            [
+              -4.015629,
+              5.323179
+            ],
+            [
+              -4.015722,
+              5.323182
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "82ceb9f354d31e204dc816cc6ec7d961_d_1_1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrieres": "0 F",
+        "color": "#ff7f00",
+        "ecart": "240 000 F",
+        "height": 13,
+        "nat_occup": "Location",
+        "ncc": "657412O",
+        "base_height": 8,
+        "nb_de_pieces": 4,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015822,
+              5.323186
+            ],
+            [
+              -4.015825,
+              5.323093
+            ],
+            [
+              -4.015735,
+              5.32309
+            ],
+            [
+              -4.015731,
+              5.323183
+            ],
+            [
+              -4.015822,
+              5.323186
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "e51e50351dcddf078f6dfb4a2707b84b_d_1_2"
+    },
+
+{
+      "type": "Feature",
+      "properties": {
+        "arrieres": "0 F",
+        "color": "#ff7f00",
+        "ecart": "432 000 F",
+        "height": 21,
+        "nat_occup": "Location",
+        "ncc": "698741P",
+        "base_height": 16,
+        "nb_de_pieces": 4,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015722,
+              5.323182
+            ],
+            [
+              -4.015726,
+              5.323089
+            ],
+            [
+              -4.015632,
+              5.323085
+            ],
+            [
+              -4.015629,
+              5.323179
+            ],
+            [
+              -4.015722,
+              5.323182
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "82ceb9f354d31e204dc816cc6ec7d961_d_2_1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrieres": "0 F",
+        "color": "#3af24b",
+        "ecart": "0 F",
+        "height": 21,
+        "nat_occup": "Location",
+        "ncc": "478512U",
+        "base_height": 16,
+        "nb_de_pieces": 4,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015822,
+              5.323186
+            ],
+            [
+              -4.015825,
+              5.323093
+            ],
+            [
+              -4.015735,
+              5.32309
+            ],
+            [
+              -4.015731,
+              5.323183
+            ],
+            [
+              -4.015822,
+              5.323186
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "e51e50351dcddf078f6dfb4a2707b84b_d_2_2"
+    },
+
+
+
+{
+      "type": "Feature",
+      "properties": {
+        "arrieres": "0 F",
+        "color": "#ff7f00",
+        "ecart": "576 000 F",
+        "height": 29,
+        "nat_occup": "Location",
+        "ncc": "412574I",
+        "base_height": 24,
+        "nb_de_pieces": 3,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015722,
+              5.323182
+            ],
+            [
+              -4.015726,
+              5.323089
+            ],
+            [
+              -4.015632,
+              5.323085
+            ],
+            [
+              -4.015629,
+              5.323179
+            ],
+            [
+              -4.015722,
+              5.323182
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "82ceb9f354d31e204dc816cc6ec7d961_d_3_1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrieres": "864 000 F",
+        "color": "#9af24b",
+        "ecart": "0 F",
+        "height": 29,
+        "nat_occup": "Location",
+        "ncc": "657412O",
+        "base_height": 24,
+        "nb_de_pieces": 3,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015822,
+              5.323186
+            ],
+            [
+              -4.015825,
+              5.323093
+            ],
+            [
+              -4.015735,
+              5.32309
+            ],
+            [
+              -4.015731,
+              5.323183
+            ],
+            [
+              -4.015822,
+              5.323186
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "e51e50351dcddf078f6dfb4a2707b84b_d_3_2"
+    },
+
+
+{
+      "type": "Feature",
+      "properties": {
+        "arrieres": "151 200 F",
+        "color": "#ff7f00",
+        "ecart": "0 F",
+        "height": 37,
+        "nat_occup": "Principale",
+        "ncc": "245174D",
+        "base_height": 32,
+        "nb_de_pieces": 4,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015722,
+              5.323182
+            ],
+            [
+              -4.015726,
+              5.323089
+            ],
+            [
+              -4.015632,
+              5.323085
+            ],
+            [
+              -4.015629,
+              5.323179
+            ],
+            [
+              -4.015722,
+              5.323182
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "82ceb9f354d31e204dc816cc6ec7d961_d_4_1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrieres": "151 200 F",
+        "color": "#ff7f00",
+        "ecart": "0 F",
+        "height": 37,
+        "nat_occup": "Location",
+        "ncc": "698745Q",
+        "base_height": 32,
+        "nb_de_pieces": 4,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015822,
+              5.323186
+            ],
+            [
+              -4.015825,
+              5.323093
+            ],
+            [
+              -4.015735,
+              5.32309
+            ],
+            [
+              -4.015731,
+              5.323183
+            ],
+            [
+              -4.015822,
+              5.323186
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "e51e50351dcddf078f6dfb4a2707b84b_d_4_2"
+    },
+
+{
+      "type": "Feature",
+      "properties": {
+        "arrieres": "0 F",
+        "color": "#ff7f00",
+        "ecart": "972 000 F",
+        "height": 45,
+        "nat_occup": "Location",
+        "ncc": "854127F",
+        "base_height": 40,
+        "nb_de_pieces": 4,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015722,
+              5.323182
+            ],
+            [
+              -4.015726,
+              5.323089
+            ],
+            [
+              -4.015632,
+              5.323085
+            ],
+            [
+              -4.015629,
+              5.323179
+            ],
+            [
+              -4.015722,
+              5.323182
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "82ceb9f354d31e204dc816cc6ec7d961_d_5_1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrieres": "0 F",
+        "color": "#ff7f00",
+        "ecart": "36 000 F",
+        "height": 45,
+        "nat_occup": "Principale",
+        "ncc": "148759H",
+        "base_height": 40,
+        "nb_de_pieces": 3,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015822,
+              5.323186
+            ],
+            [
+              -4.015825,
+              5.323093
+            ],
+            [
+              -4.015735,
+              5.32309
+            ],
+            [
+              -4.015731,
+              5.323183
+            ],
+            [
+              -4.015822,
+              5.323186
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "e51e50351dcddf078f6dfb4a2707b84b_d_5_2"
+    },
+
+
+{
+      "type": "Feature",
+      "properties": {
+        "arrieres": "0 F",
+        "color": "#3af24b",
+        "ecart": "0 F",
+        "height": 53,
+        "nat_occup": "Location",
+        "ncc": "147852U",
+        "base_height": 48,
+        "nb_de_pieces": 3,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015722,
+              5.323182
+            ],
+            [
+              -4.015726,
+              5.323089
+            ],
+            [
+              -4.015632,
+              5.323085
+            ],
+            [
+              -4.015629,
+              5.323179
+            ],
+            [
+              -4.015722,
+              5.323182
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "82ceb9f354d31e204dc816cc6ec7d961_d_6_1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrieres": "0 F",
+        "color": "#8c8e8a",
+        "ecart": "0 F",
+        "height": 53,
+        "nat_occup": "Location",
+        "ncc": "657412O",
+        "base_height": 48,
+        "nb_de_pieces": 4,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015822,
+              5.323186
+            ],
+            [
+              -4.015825,
+              5.323093
+            ],
+            [
+              -4.015735,
+              5.32309
+            ],
+            [
+              -4.015731,
+              5.323183
+            ],
+            [
+              -4.015822,
+              5.323186
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "e51e50351dcddf078f6dfb4a2707b84b_d_6_2"
+    },
+
+
+
+{
+      "type": "Feature",
+      "properties": {
+        "arrieres": "0 F",
+        "color": "#ff7f00",
+        "ecart": "468 000 F",
+        "height": 61,
+        "nat_occup": "Location",
+        "ncc": "365412A",
+        "base_height": 56,
+        "nb_de_pieces": 2,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015722,
+              5.323182
+            ],
+            [
+              -4.015726,
+              5.323089
+            ],
+            [
+              -4.015632,
+              5.323085
+            ],
+            [
+              -4.015629,
+              5.323179
+            ],
+            [
+              -4.015722,
+              5.323182
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "82ceb9f354d31e204dc816cc6ec7d961_d_7_1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrieres": "0 F",
+        "color": "#ff7f00",
+        "ecart": "32 400 F",
+        "height": 61,
+        "nat_occup": "Principale",
+        "ncc": "987412E",
+        "base_height": 56,
+        "nb_de_pieces": 1,
+        "type": "Studio"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015822,
+              5.323186
+            ],
+            [
+              -4.015825,
+              5.323093
+            ],
+            [
+              -4.015735,
+              5.32309
+            ],
+            [
+              -4.015731,
+              5.323183
+            ],
+            [
+              -4.015822,
+              5.323186
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "e51e50351dcddf078f6dfb4a2707b84b_d_7_2"
+    },
+
+
+{
+      "type": "Feature",
+      "properties": {
+        "arrieres": "0 F",
+        "color": "#ff7f00",
+        "ecart": "151 200 F",
+        "height": 69,
+        "nat_occup": "Principale",
+        "ncc": "785421T",
+        "base_height": 64,
+        "nb_de_pieces": 3,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015722,
+              5.323182
+            ],
+            [
+              -4.015726,
+              5.323089
+            ],
+            [
+              -4.015632,
+              5.323085
+            ],
+            [
+              -4.015629,
+              5.323179
+            ],
+            [
+              -4.015722,
+              5.323182
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "82ceb9f354d31e204dc816cc6ec7d961_d_8_1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrieres": "0 F",
+        "color": "#ff7f00",
+        "ecart": "129 600 F",
+        "height": 69,
+        "nat_occup": "Principale",
+        "ncc": "114785A",
+        "base_height": 64,
+        "nb_de_pieces": 4,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015822,
+              5.323186
+            ],
+            [
+              -4.015825,
+              5.323093
+            ],
+            [
+              -4.015735,
+              5.32309
+            ],
+            [
+              -4.015731,
+              5.323183
+            ],
+            [
+              -4.015822,
+              5.323186
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "e51e50351dcddf078f6dfb4a2707b84b_d_8_2"
+    },
+
+
+{
+      "type": "Feature",
+      "properties": {
+        "arrieres": "0 F",
+        "color": "#8c8e8a",
+        "ecart": "0 F",
+        "height": 77,
+        "nat_occup": "Location",
+        "ncc": "354785R",
+        "base_height": 72,
+        "nb_de_pieces": 2,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015722,
+              5.323182
+            ],
+            [
+              -4.015726,
+              5.323089
+            ],
+            [
+              -4.015632,
+              5.323085
+            ],
+            [
+              -4.015629,
+              5.323179
+            ],
+            [
+              -4.015722,
+              5.323182
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "82ceb9f354d31e204dc816cc6ec7d961_d_9_1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrieres": "1 152 000 F",
+        "color": "#9f3c2c",
+        "ecart": "0 F",
+        "height": 77,
+        "nat_occup": "Location",
+        "ncc": "854712A",
+        "base_height": 72,
+        "nb_de_pieces": 4,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015822,
+              5.323186
+            ],
+            [
+              -4.015825,
+              5.323093
+            ],
+            [
+              -4.015735,
+              5.32309
+            ],
+            [
+              -4.015731,
+              5.323183
+            ],
+            [
+              -4.015822,
+              5.323186
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "e51e50351dcddf078f6dfb4a2707b84b_d_9_2"
+    },
+
+
+{
+      "type": "Feature",
+      "properties": {
+        "arrieres": "1 152 000 F",
+        "color": "#9f3c2c",
+        "ecart": "0 F",
+        "height": 85,
+        "nat_occup": "Location",
+        "ncc": "142553G",
+        "base_height": 80,
+        "nb_de_pieces": 4,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015722,
+              5.323182
+            ],
+            [
+              -4.015726,
+              5.323089
+            ],
+            [
+              -4.015632,
+              5.323085
+            ],
+            [
+              -4.015629,
+              5.323179
+            ],
+            [
+              -4.015722,
+              5.323182
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "82ceb9f354d31e204dc816cc6ec7d961_d_10_1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrieres": "1 152 000 F",
+        "color": "#9f3c2c",
+        "ecart": "0 F",
+        "height": 85,
+        "nat_occup": "Location",
+        "ncc": "874125E",
+        "base_height": 80,
+        "nb_de_pieces": 4,
+        "type": "Appartement"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -4.015822,
+              5.323186
+            ],
+            [
+              -4.015825,
+              5.323093
+            ],
+            [
+              -4.015735,
+              5.32309
+            ],
+            [
+              -4.015731,
+              5.323183
+            ],
+            [
+              -4.015822,
+              5.323186
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "e51e50351dcddf078f6dfb4a2707b84b_d_10_2"
+    }
