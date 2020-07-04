@@ -1,0 +1,521 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "1",
+        "nom_bv": "Andilly - Bassin des Huits Arpents",
+        "annee": "",
+        "maintenance": "",
+        "capacite": "",
+        "remplissage": "",
+        "degradation": "",
+        "specificite": "Aménager en parc paysager",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.299917,
+              48.996944
+          ],
+        "type": "Point"
+      }
+    },
+
+
+
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "2",
+        "nom_bv": "BEAUCHAMP - Bassin de Boissy",
+        "annee": "",
+        "maintenance": "",
+        "capacite": "",
+        "remplissage": "",
+        "degradation": "",
+        "specificite": "",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.190139,
+              49.008833
+          ],
+        "type": "Point"
+      }
+    },
+
+
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "3",
+        "nom_bv": "BEAUCHAMP - Bassin Aval 1",
+        "annee": "",
+        "maintenance": "",
+        "capacite": "",
+        "remplissage": "",
+        "degradation": "",
+        "specificite": "",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.211333,
+              49.004167
+          ],
+        "type": "Point"
+      }
+    },
+
+
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "4",
+        "nom_bv": "BESSANCOURT - Bassin de la Peupleraie",
+        "annee": "",
+        "maintenance": "",
+        "capacite": "",
+        "remplissage": "",
+        "degradation": "",
+        "specificite": "",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.1945,
+              49.032417
+          ],
+        "type": "Point"
+      }
+    },
+
+
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "5",
+        "nom_bv": "EAUBONNE - Bassin des Moulinets",
+        "annee": "1963",
+        "maintenance": "Renovation et agrandissement 1997",
+        "capacite": "42 000 m3",
+        "remplissage": "",
+        "degradation": "",
+        "specificite": "Aménager en parc paysager",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.283241,
+              49.000892
+          ],
+        "type": "Point"
+      }
+    },
+
+
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "6",
+        "nom_bv": "ENGHIEN - Lac d'Enghien",
+        "annee": "",
+        "maintenance": "",
+        "capacite": "",
+        "remplissage": "",
+        "degradation": "",
+        "specificite": "",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.299056,
+              48.972111
+          ],
+        "type": "Point"
+      }
+    },
+
+
+
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "7",
+        "nom_bv": "LE PLESSIS BOUCHARD - Bassin des Pillies",
+        "annee": "",
+        "maintenance": "",
+        "capacite": "",
+        "remplissage": "",
+        "degradation": "",
+        "specificite": "",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.247417,
+              49.001194
+          ],
+        "type": "Point"
+      }
+    },
+
+
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "8",
+        "nom_bv": "MONTLIGNON - Digue de la Chasse",
+        "annee": "",
+        "maintenance": "",
+        "capacite": "4 700 m3",
+        "remplissage": "",
+        "degradation": "",
+        "specificite": "Enterré et réseau unitaire",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.294056,
+              49.028556
+          ],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "9",
+        "nom_bv": "MONTMARGNY - Bassin de la ZAC de la Jonction",
+        "annee": "",
+        "maintenance": "",
+        "capacite": "",
+        "remplissage": "",
+        "degradation": "",
+        "specificite": "",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.346944,
+              48.972889
+          ],
+        "type": "Point"
+      }
+    },
+
+
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "10",
+        "nom_bv": "GROSLAY - Bassin Groslay Amont",
+        "annee": "",
+        "maintenance": "",
+        "capacite": "",
+        "remplissage": "Vide",
+        "degradation": "",
+        "specificite": "Bassin sec et engazonné",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.335806,
+              48.988667
+          ],
+        "type": "Point"
+      }
+    },
+
+
+
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "11",
+        "nom_bv": "PIERRELAYE - Bassin Aval 2",
+        "annee": "",
+        "maintenance": "Maintenance et approvisionnement en 26 Mars 2014",
+        "capacite": "",
+        "remplissage": "",
+        "degradation": "",
+        "specificite": "",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.172944,
+              49.016
+          ],
+        "type": "Point"
+      }
+    },
+
+
+
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "12",
+        "nom_bv": "SAINT-GRATIEN - Bassin des Cressonières",
+        "annee": "196",
+        "maintenance": "",
+        "capacite": "",
+        "remplissage": "",
+        "degradation": "",
+        "specificite": "",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.292917,
+              48.970333
+          ],
+        "type": "Point"
+      }
+    },
+
+
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "13",
+        "nom_bv": "SAINT-LEU - Bassin de Saint-Leu",
+        "annee": "",
+        "maintenance": "",
+        "capacite": "",
+        "remplissage": "",
+        "degradation": "",
+        "specificite": "",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.234944,
+              49.007417
+          ],
+        "type": "Point"
+      }
+    },
+
+
+
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "14",
+        "nom_bv": "SAINT-PRIX - Bassin de Saint-Prix Amont",
+        "annee": "",
+        "maintenance": "",
+        "capacite": "",
+        "remplissage": "",
+        "degradation": "",
+        "specificite": "",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.262867,
+              49.003099
+          ],
+        "type": "Point"
+      }
+    },
+
+
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "15",
+        "nom_bv": "SAINT-PRIX - Bassin de Saint-Prix Aval",
+        "annee": "",
+        "maintenance": "",
+        "capacite": "",
+        "remplissage": "",
+        "degradation": "",
+        "specificite": "",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.266139,
+              49.004667
+          ],
+        "type": "Point"
+      }
+    },
+
+
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "16",
+        "nom_bv": "SOISY SOUS MONTMORENCY - Bassin Schweitzer",
+        "annee": "",
+        "maintenance": "",
+        "capacite": "",
+        "remplissage": "",
+        "degradation": "",
+        "specificite": "",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.306889,
+              48.994167
+          ],
+        "type": "Point"
+      }
+    },
+
+
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "17",
+        "nom_bv": "SOISY SOUS MONTMORENCY - Bassin Descartes",
+        "annee": "",
+        "maintenance": "",
+        "capacite": "",
+        "remplissage": "",
+        "degradation": "",
+        "specificite": "",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.293548,
+              48.980675
+          ],
+        "type": "Point"
+      }
+    },
+
+
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "18",
+        "nom_bv": "TAVERNY - Bassin des Ossards",
+        "annee": "",
+        "maintenance": "",
+        "capacite": "",
+        "remplissage": "",
+        "degradation": "",
+        "specificite": "Bassin sec à ciel ouvert",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.209472,
+              49.025028
+          ],
+        "type": "Point"
+      }
+    },
+
+
+    {
+      "type": "Feature",
+      "properties": {
+
+        "numero": "19",
+        "nom_bv": "TAVERNY - Bassin des Aulnales",
+        "annee": "",
+        "maintenance": "",
+        "capacite": "",
+        "remplissage": "",
+        "degradation": "",
+        "specificite": "",
+        "gerant": "SIARE",
+        "color": "#582900"
+
+      },
+      "geometry": {
+        "coordinates":
+          [
+              2.223611,
+              49.015972
+          ],
+        "type": "Point"
+      }
+    }
+
+  ],
+  "type": "FeatureCollection"
+}
