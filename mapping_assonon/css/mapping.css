@@ -1,0 +1,180 @@
+body{
+	overflow-y: hidden;
+	margin: 0;
+	padding: 0;
+}
+#map{
+	position: absolute;
+	width: 100%;
+	height: 55.5em;
+}
+/* Delete MAPBOX logo on the bottom left corner */
+.mapboxgl-ctrl-logo {
+    display: none !important;
+}
+
+/* SHOW AND HIDE LAYER */
+
+#menu_layer {
+background: #fff;
+position: relative;
+z-index: 1;
+top: 0.1em;
+right: 10px;
+padding-bottom: 10px;
+border-radius: 3px;
+width: 100%;
+border: 1px solid rgba(0, 0, 0, 0.4);
+font-family: 'Open Sans', sans-serif;
+}
+ 
+#menu_layer a {
+font-size: 14px;
+color: #404040;
+display: block;
+margin: 0;
+text-decoration: none;
+border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+text-align: center;
+}
+ 
+#menu_layer a:last-child {
+border: none;
+}
+ 
+#menu_layer a:hover {
+background-color: #f8f8f8;
+color: #404040;
+}
+ 
+#menu_layer a.active {
+background-color: #3887be;
+color: #ffffff;
+}
+ 
+#menu_layer a.active:hover {
+background: #3074a4;
+}
+
+.menu_icon{
+	position: relative;
+	top: 1em;
+}
+.plus1{
+	position: relative;
+	top: 0.3em;
+	left: 12.5em;
+}
+.plus2{
+	position: relative;
+	top: 0.3em;
+	left: 12.5em;
+}
+
+/*Accordion dropping*/
+.accordion{
+  
+  color: #444;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 17px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #77b5fe;
+}
+
+.panel{
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+/*Elements in legend*/
+.legend_bloc1{
+	position: relative;
+	top: 0.5em;
+	height: 65px;
+}
+
+.legend1{
+  height: 30px;
+  width: 30px;
+  background-color: #8c8e8a;
+}
+
+.text_legend1{
+	position: relative;
+	bottom: 3.5em;
+	left: 3em;
+}
+
+.legend_bloc2{
+	position: relative;
+	top: 0.8em;
+	height: 65px;
+}
+
+.legend2{
+  height: 30px;
+  width: 30px;
+  background-color: #3af24b;
+}
+
+.text_legend2{
+	position: relative;
+	bottom: 3.5em;
+	left: 3em;
+}
+
+.legend_bloc3{
+	position: relative;
+	top: 1.1em;
+	height: 65px;
+}
+
+.legend3{
+  height: 30px;
+  width: 30px;
+  background-color: #ff7f00;
+}
+
+.text_legend3{
+	position: relative;
+	bottom: 3.5em;
+	left: 3em;
+}
+
+.legend_bloc4{
+	position: relative;
+	top: 1.4em;
+	height: 65px;
+}
+
+.legend4{
+  height: 30px;
+  width: 30px;
+  background-color: #9f3c2c;
+}
+
+.text_legend4{
+	position: relative;
+	bottom: 3.5em;
+	left: 3em;
+}
+
+/*Geocoding*/
+.mapboxgl-ctrl-geocoder {
+min-width: 100%;
+position: absolute;
+z-index: 1;
+width: 50%;
+right: 35em;
+margin-left: 25%;
+}
