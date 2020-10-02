@@ -79,7 +79,7 @@
       "properties": {
         "ncc": "1209783K",
         "num_parcelle": "BY578COP3",
-        "base_height": "6",
+        "base_height": 6,
         "height": 9
       },
       "geometry": {
@@ -146,14 +146,12 @@
       },
       "id": "e362a97d105a1b44c63238d010b01159_4"
     },
-
-
 {
       "type": "Feature",
       "properties": {
         "ncc": "6553246M",
         "num_parcelle": "BY578COP5",
-        "base_height": "12",
+        "base_height": 12,
         "height": 15
       },
       "geometry": {
@@ -220,8 +218,6 @@
       },
       "id": "e362a97d105a1b44c63238d010b01159_6"
     }
-
-
 
   ],
   "type": "FeatureCollection"
