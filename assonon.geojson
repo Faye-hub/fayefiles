@@ -5,8 +5,8 @@
       "properties": {
         "base_height": 0,
         "height": 3,
-        "ncc": "",
-        "num_parcelle": ""
+        "ncc": "533126P",
+        "num_parcelle": "BY578COP1"
       },
       "geometry": {
         "coordinates": [
@@ -42,8 +42,8 @@
       "properties": {
         "base_height": 0,
         "height": 3,
-        "ncc": "",
-        "num_parcelle": ""
+        "ncc": "874549S",
+        "num_parcelle": "BY578COP2"
       },
       "geometry": {
         "coordinates": [
@@ -80,8 +80,8 @@
       "properties": {
         "base_height": 6,
         "height": 9,
-        "ncc": "",
-        "num_parcelle": ""
+        "ncc": "693852K",
+        "num_parcelle": "BY578COP3"
       },
       "geometry": {
         "coordinates": [
@@ -117,8 +117,8 @@
       "properties": {
         "base_height": 6,
         "height": 9,
-        "ncc": "",
-        "num_parcelle": ""
+        "ncc": "521324L",
+        "num_parcelle": "BY578COP4"
       },
       "geometry": {
         "coordinates": [
@@ -155,8 +155,8 @@
       "properties": {
         "base_height": 12,
         "height": 15,
-        "ncc": "",
-        "num_parcelle": ""
+        "ncc": "123456M",
+        "num_parcelle": "BY578COP5"
       },
       "geometry": {
         "coordinates": [
@@ -192,8 +192,8 @@
       "properties": {
         "base_height": 12,
         "height": 15,
-        "ncc": "",
-        "num_parcelle": ""
+        "ncc": "987456N",
+        "num_parcelle": "BY578COP6"
       },
       "geometry": {
         "coordinates": [
