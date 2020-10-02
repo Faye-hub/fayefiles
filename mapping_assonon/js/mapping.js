@@ -2,7 +2,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiM2RidWlsZGluZ3MiLCJhIjoiY2syemRldWFvMDdueDNtc
 var map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/mapbox/streets-v11',
-center: [-4.0190, 5.3233],
+center: [-4.0012, 5.3340],
 zoom: 16,
 pitch: 45,
 attributionControl: false //Delete improve map, osm & mapbox
