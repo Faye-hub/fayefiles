@@ -1,0 +1,958 @@
+<?php
+session_start();
+if(!empty($_POST))
+{
+	$_SESSION['save'] = $_POST;
+	
+	$pageActu = $_SERVER['PHP_SELF'];
+	
+	if(!empty($_SERVER['QUERY_STRING']))
+	{
+		$pageActu .='?'. $_SERVER['QUERY_STRING'];
+	}
+	header('Location:'.$pageActu);
+	exit();
+}
+
+if(isset($_SESSION['save']))
+{
+	$_POST = $_SESSION['save'];
+	
+
+	unset($_SESSION['save']);
+}
+
+?>
+
+<?php 
+			//Connexion de la BD(MySQL) et de PDO
+                    try
+                    {
+                        $bdd = new PDO('mysql:host=localhost;dbname=webmapping;charset=utf8', 'root', '',array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
+                    }
+                    catch (Exception $e)
+                    {
+                            die('Erreur : ' . $e->getMessage()); 
+                    }
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Maintenance</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/para.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+
+<!-- My LINKS -->
+
+<link rel="stylesheet" type="text/css" href="maintenance.scss">
+
+
+
+
+
+</head>
+
+
+<body>
+
+<!-- TABBED MENU -->
+
+
+
+<div class="container">
+
+
+<!-- INFO SUR LA DERNIERE ROUTE -->
+
+
+	 <button class="info_last_layer_added" title="Informations sur la dernière route ajoutée :
+	<?php
+							$req = $bdd->query('SELECT * FROM voirie ORDER BY id DESC LIMIT 0,1');
+							$donnees = $req->fetch();
+							echo "Nom de la route : {$donnees['nom_route']}"."\n";
+							echo "Categorie de la route : {$donnees['categorie_route']}"."\n";
+							echo "Longueur de la route : {$donnees['longueur_route']}"."\n";
+							echo "Maitre d'ouvrage : {$donnees['maitre_ouvrage']}"."\n";
+							echo "Maitre d'ouvrage délégué : {$donnees['maitre_ouvrage_de']}"."\n";
+							echo "Maitre d'oeuvre : {$donnees['maitre_oeuvre']}"."\n";
+							echo "Entreprise exécutante : {$donnees['entreprise_executante']}"."\n";
+							echo "Coût de la route : {$donnees['cout_route']}"."\n";
+							echo "Mise en service : {$donnees['mise_en_service_route']}"."\n";
+	?>">
+	<img src="images/infos.png"/></button>
+
+
+<!-- INFO SUR LA DERNIERE ROUTE EN ENTRETIEN -->
+
+
+<button class="info_last_layer_added1" title="Informations sur la dernière route en entretien ajoutée :
+	<?php
+							$req1 = $bdd->query('SELECT * FROM voirie_entretien ORDER BY id DESC LIMIT 0,1');
+							$donnees1 = $req1->fetch();
+							
+							echo "Type de l'entretien : {$donnees1['type_entretien']}"."\n";
+							
+							echo "Maitre d'ouvrage de l'entretien : {$donnees1['maitre_ouvrage_entretien']}"."\n";
+							
+							echo "Maitre d'ouvrage délégué de l'entretien : {$donnees1['maitre_ouvrage_de_entretien']}"."\n";
+							
+							echo "Maitre d'oeuvre de l'entretien : {$donnees1['maitre_oeuvre_entretien']}"."\n";
+							
+							echo "Entreprise exécutante de l'entretien : {$donnees1['entreprise_executante_entretien']}"."\n";
+							
+							echo "Coût de l'entretien : {$donnees1['cout_entretien']}"."\n";
+							
+							echo "Fin des travaux de l'entretien : {$donnees1['fin_travaux_entretien']}"."\n";
+
+							echo "Statut de l'entretien : {$donnees1['statut_entretien']}"."\n";
+	?>">
+	<img src="images/infos.png"/></button>
+
+
+<!-- INFO SUR LA DERNIERE ROUTE DEGRADE -->
+
+
+<button class="info_last_layer_added2" title="Informations sur la dernière route ajoutée :
+	<?php
+							$req2 = $bdd->query('SELECT * FROM voirie_degrade ORDER BY id DESC LIMIT 0,1');
+							$donnees2 = $req2->fetch();
+							
+							echo "Type des dégâts : {$donnees2['type_degats']}"."\n";
+							
+							echo "Type de chaussée : {$donnees2['type_chaussee']}"."\n";
+							
+							echo "Type de la circulation : {$donnees2['type_circulation']}"."\n";
+							
+							echo "Longueur du tronçon dégradé : {$donnees2['longueur_troncon']}"."\n";
+							
+							echo "Coût d'un éventuel entretien : {$donnees2['cout_eventuel_entretien']}"."\n";
+							
+							echo "Ville du tronçon : {$donnees2['ville_troncon']}"."\n";
+							
+							echo "Quartier du tronçon : {$donnees2['quartier_troncon']}"."\n";
+	
+	?>">
+	<img src="images/infos.png"/></button>
+
+
+
+	<!-- THAT PRETTY GREEN BACKGROUND -->
+  
+  <div id="logo">
+   
+  </div>
+
+	<!-- / THAT PRETTY GREEN BACKGROUND -->
+
+  <div class="leftbox">
+
+
+    <nav id="left_tabbed_menu">
+
+      <a id="profile" class="active" title="Ajouter une nouvelle couche">
+      <span class="titre_menu_left">Route</span> <img class="icon" src="images/add_icon.png"/> </a>
+      
+      <a id="payment" title="Ajouter une couche de tronçon en entretien"> <span class="titre_menu_left">Entretien</span> <img class="icon" src="images/upkeep_icon.png"/> </a>
+      
+      <a id="subscription" title="Ajouter une couche de tronçon dégradé">
+      <span class="titre_menu_left">Dégradé</span> <img class="icon" src="images/closed_icon.png"/> </a>
+      
+      <a id="privacy" title="Modifier une couche"> <span class="titre_menu_left">Modifier</span> <img class="icon" src="images/edit_icon.png"/> </a>
+      
+      <a id="settings" title="Supprimer une couche"> <span class="titre_menu_left">Supprimer</span> <img class="icon" src="images/delete_icon.png"/> </a>
+
+    </nav>
+
+  </div>
+
+  <div class="rightbox">
+
+
+
+    
+    <div class="profile">
+
+
+    	<!-- Formulaire de l'ajout d'une couche -->
+
+
+	<div class="container-contact100">
+
+		<div class="wrap-contact100">
+
+			<form class="contact100-form" method="post" action="" enctype="multipart/form-data">
+
+				<span class="contact100-form-title">
+					Création d'une couche
+				</span>
+
+				<h3><span class="couche_route">Route</span></h3>
+
+				<!-- Nom de la route -->
+
+				<label id="bloc1" class="label-input100" for="">Nom de la route *</label>
+				
+				<div id="bloc1" class="wrap-input100 rs1">
+					
+					<input id="" class="input100" type="text" name="nom_route" placeholder="Nom de la route"/>
+
+					<span class="focus-input100"></span>
+				
+				</div>
+
+
+
+				<!-- Catégorie de la route -->
+
+				<label id="bloc2" class="label-input100" for="">Catégorie de la route *</label>
+
+				<div id="bloc2" class="wrap-input100 rs1">
+
+
+					<select class="input100" name="categorie_route">
+
+            				<option value="Autoroute" selected="selected">Autoroute</option>
+            				<option value="Route intercommunale">Route intercommunale</option>
+            				<option value="Boulevard">Boulevard</option>
+            				<option value="Voie express">Voie express</option>
+							<option value="Routes internationales">Routes internationales</option>
+
+           			</select>
+					
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+
+
+				<!-- Longueur -->
+
+				<label id="bloc3" class="label-input100" for=""> Longueur de la route *</label>
+
+				<div id="bloc3" class="wrap-input100 rs1 ">
+
+					<input id="" class="input100" type="text" name="longueur_route" placeholder="Ex. 10 Km ">
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+
+			<!-- Maître d'ouvrage -->
+
+				<label id="bloc4" class="label-input100" for=""> Maître d'ouvrage *</label>
+
+				<div id="bloc4" class="wrap-input100 rs1 ">
+
+					<input id="" class="input100" type="text" name="maitre_ouvrage" placeholder="Ex. Banque Mondiale ">
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+
+			<!-- Maître d'ouvrage délégué -->
+
+				<label id="bloc5" class="label-input100" for=""> Maître d'ouvrage délégué (Optionnel) </label>
+				
+				<div id="bloc5" class="wrap-input100 rs1">
+					
+					<input id="" class="input100" type="text" name="maitre_ouvrage_de" placeholder="Ex. AGEROUTE ">
+
+					<span class="focus-input100"></span>
+
+				</div>
+
+			<!-- Maître d'oeuvre -->
+
+				<label id="bloc6" class="label-input100" for=""> Maître d'oeuvre *</label>
+
+				<div id="bloc6" class="wrap-input100 rs1 ">
+
+					<input id="" class="input100" type="text" name="maitre_oeuvre" placeholder="Ex. BNETD ">
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+			
+			<!-- Entreprise exécutante -->
+				
+				<label id="bloc7" class="label-input100" for=""> Entreprise exécutante *</label>
+
+				<div id="bloc7" class="wrap-input100 rs1 ">
+
+					<input id="" class="input100" type="text" name="entreprise_executante" placeholder="">
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+			
+			
+			<!-- Coût -->
+				
+				<label id="bloc8" class="label-input100" for=""> Coût *</label>
+
+				<div id="bloc8" class="wrap-input100 rs1 ">
+
+					<input id="" class="input100" type="text" name="cout_route" placeholder="">
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+
+
+			<!-- Mise en service -->
+
+				<label id="bloc9" class="label-input100" for=""> Mise en service *</label>
+
+				<div id="bloc9" class="wrap-input100 rs1 ">
+
+					<input id="" class="input100" type="text" name="mise_en_service_route" placeholder="">
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+
+
+			<!-- Upload du fichier -->
+
+			<label id="upload_fichier1" class="label-input100" for=""> Fichier : </label>
+
+				<div id="upload_fichier1">
+
+					<input id="" class="input100" type="file" name="" placeholder="">
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+
+		
+			
+			<!-- Valider -->
+
+				<div id="" class="container-contact100-form-btn">
+					<button class="contact100-form-btn" name="submit" type="submit">
+						<span>
+							Enregistrer
+							<i class="zmdi zmdi-arrow-right m-l-8"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+
+
+
+
+
+
+		</div>
+	</div>
+
+
+
+			<!-- / Formulaire de l'ajout d'une couche -->
+  
+</div>
+    
+
+
+
+
+<div class="payment noshow">
+
+
+
+<!-- Formulaire de l'ajout d'un tronçon en entretien -->
+
+
+	<div class="container-contact100">
+
+		<div class="wrap-contact100">
+
+			<form class="contact100-form" method="post" action="">
+
+				<span class="contact100-form-title">
+					Création d'une couche
+				</span>
+
+				<h3><span class="couche_route_entretien">Tronçon en entretien</span></h3>
+
+
+
+				<!-- Type de l'entretien -->
+
+
+				<label id="bloc1" class="label-input100" for="">Type de l'entretien *</label>
+				
+				<div id="bloc1" class="wrap-input100 rs1 validate-input">
+					
+					<input id="" class="input100" type="text" name="type_entretien" placeholder="Type de l'entretien"/>
+
+					<span class="focus-input100"></span>
+				
+				</div>
+				
+
+			<!-- Maître d'ouvrage de l'entretien -->
+
+				<label id="bloc2" class="label-input100" for=""> Maître d'ouvrage de l'entretien *</label>
+
+				<div id="bloc2" class="wrap-input100 rs1 validate-input">
+
+					<input id="" class="input100" type="text" name="maitre_ouvrage_entretien" placeholder="Ex. Banque Mondiale ">
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+
+			<!-- Maître d'ouvrage délégué de l'entretien -->
+
+				<label id="bloc3" class="label-input100" for=""> Maître d'ouvrage délégué de l'entretien</label>
+				
+				<div id="bloc3" class="wrap-input100 rs1">
+					
+					<input id="" class="input100" type="text" name="maitre_ouvrage_de_entretien" placeholder="Ex. AGEROUTE ">
+
+					<span class="focus-input100"></span>
+
+				</div>
+
+			<!-- Maître d'oeuvre de l'entretien -->
+
+				<label id="bloc4" class="label-input100" for=""> Maître d'oeuvre de l'entretien*</label>
+
+				<div id="bloc4" class="wrap-input100 rs1 validate-input">
+
+					<input id="" class="input100" type="text" name="maitre_oeuvre_entretien" placeholder="Ex. BNETD ">
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+			
+			<!-- Entreprise exécutante de l'entretien -->
+				
+				<label id="bloc5" class="label-input100" for="">Entreprise exécutante de l'entretien*</label>
+
+				<div id="bloc5" class="wrap-input100 rs1 validate-input">
+
+					<input id="" class="input100" type="text" name="entreprise_executante_entretien" placeholder="Ex. COLAS ">
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+			
+			
+			<!-- Coût de l'entretien -->
+				
+				<label id="bloc6" class="label-input100" for="">Coût de l'entretien*</label>
+
+				<div id="bloc6" class="wrap-input100 rs1 validate-input">
+
+					<input id="" class="input100" type="text" name="cout_entretien" placeholder="">
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+
+
+			<!-- Fin des travaux de l'entretien -->
+
+				<label id="bloc7" class="label-input100" for="">Fin des travaux *</label>
+
+				<div id="bloc7" class="wrap-input100 rs1 validate-input">
+
+					<input id="" class="input100" type="text" name="fin_travaux_entretien" placeholder="">
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+
+			
+			<!-- Statut de l'entretien -->
+
+				<label id="bloc8" class="label-input100" for="">Statut *</label>
+
+				<div id="bloc8" class="wrap-input100 rs1 validate-input">
+
+					<select class="input100" name="statut_entretien">
+
+            				<option value="En cours">En cours</option>
+            				<option value="Terminé">Terminé</option>
+            				
+            				
+           			</select>
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+
+			
+			<!-- Valider -->
+
+				<div id="" class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							Enregistrer
+							<i class="zmdi zmdi-arrow-right m-l-8"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+			<!-- / Formulaire de l'ajout d'un tronçon en entretien -->
+					
+					
+					
+</div>
+
+
+
+
+ <div class="subscription noshow">
+
+
+
+ 	<!-- Formulaire de l'ajout d'un tronçon dégradé -->
+
+
+	<div class="container-contact100">
+
+		<div class="wrap-contact100">
+
+			<form class="contact100-form">
+
+				<span class="contact100-form-title">
+					Création d'une couche
+				</span>
+
+				<h3><span class="couche_route_degrade">Tronçon dégradé</span></h3>
+
+				<!-- Type de dégâts du tronçon -->
+
+				<label id="bloc1" class="label-input100" for="">Type de dégâts du tronçon*</label>
+
+				
+				<div id="bloc1" class="wrap-input100 rs1">
+					
+					<input id="" class="input100" type="text" name="type_degats" placeholder="État du tronçon"/>
+
+					<span class="focus-input100"></span>
+				
+				</div>
+
+
+
+				<!-- Type de chaussée du tronçon -->
+
+				<label id="bloc2" class="label-input100" for="">Type de la chaussée du tronçon *</label>
+
+				<div id="bloc2" class="wrap-input100 rs1 ">
+					
+					<input class="input100" type="text" name="type_chaussee" placeholder="Ex: Chaussée rigide"/>
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+
+
+				<!-- Type de circulation du tronçon  -->
+
+				<label id="bloc3" class="label-input100" for="">Type de la circulation *</label>
+
+				<div id="bloc3" class="wrap-input100 rs1 ">
+
+					<select class="input100" name="type_circulation">
+
+            				<option value="Mêlée" selected="selected">Mêlée</option>
+            				<option value="Juxtaposée">Juxtaposée</option>
+            				<option value="Séparée">Séparée</option>
+            				
+           			</select>
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+
+
+				<!-- Longueur du tronçon dégradé -->
+
+				<label id="bloc4" class="label-input100" for=""> Longueur du tronçon dégradé*</label>
+
+				<div id="bloc4" class="wrap-input100 rs1 ">
+
+					<input id="" class="input100" type="text" name="longueur_troncon" placeholder="Ex. 1 000 Km ">
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+
+					
+			
+			<!-- Coût d'un éventuel entretien du tronçon dégradé -->
+				
+				<label id="bloc5" class="label-input100" for="">Coût d'un éventuel entretien</label>
+
+				<div id="bloc5" class="wrap-input100 rs1">
+
+					<input id="" class="input100" type="text" name="cout_eventuel_entretien" placeholder="">
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+
+
+			<!--  Ville du tronçon dégradé  -->
+
+				<label id="bloc6" class="label-input100" for="">Ville du tronçon dégradé *</label>
+
+				<div id="bloc6" class="wrap-input100 rs1 ">
+
+					<input id="" class="input100" type="text" name="ville_troncon" placeholder="Ex. Bouaflé ">
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+
+
+
+				<!-- Quartier du tronçon dégradé -->
+
+				<label id="bloc7" class="label-input100" for=""> Quartier du tronçon dégradé *</label>
+
+				<div id="bloc7" class="wrap-input100 rs1 ">
+
+					<input id="" class="input100" type="text" name="quartier_troncon" placeholder="Ex. Riviera 4 M'badon ">
+					
+					<span class="focus-input100"></span>
+				
+				</div>
+
+
+
+			
+			<!-- Valider -->
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							Enregistrer
+							<i class="zmdi zmdi-arrow-right m-l-8"></i>
+						</span>
+					</button>
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+
+
+			<!-- / Formulaire de l'ajout d'un tronçon dégradé -->
+
+
+    	    	
+
+</div>    	
+
+
+
+
+
+    <div class="privacy noshow">
+
+    	<div class="container-contact100">
+
+			<div class="wrap-contact100">
+
+    			<form class="contact100-form">
+		
+<?php
+	
+	$reponse1 = $bdd->query('SELECT * FROM voirie');
+	while ($donnees1 = $reponse1->fetch())
+		{
+?>
+
+	<strong></strong> : <?php echo $donnees1['nom_route']; ?>
+
+<?php
+
+}
+
+?>
+
+
+<!--	$reponse2 = $bdd->query('SELECT * FROM voirie_entretien');
+	$reponse3 = $bdd->query('SELECT * FROM voirie_degrade'); -->
+	
+
+			</form>
+
+		</div>
+
+	</div>
+
+  
+</div>
+
+
+
+
+ <div class="settings noshow">
+
+    </div>
+
+
+
+
+
+    
+  </div>
+
+
+</div>
+
+		
+
+
+		<!-- / TABBED MENU -->
+
+
+
+
+
+
+
+<!-- Menu Principal -->
+			
+
+<div id="menu">
+		
+				<ul id=""> 
+					<li><a href="../index.php">Accueil</a></li> 
+					<li><a href="../cartographie/cartographie.php">Cartograhie</a></li>
+					<li><a href="../intervenants.php">Intervenants</a></li>
+					<li><a href="maintenance.php">Maintenance</a></li>
+					<li><a href="#">Mon profil</a></li> 
+				</ul>
+
+</div>
+
+
+
+<!-- / Menu Principal -->
+
+
+
+<!-- Enregistrer les données du formulaire de route -->
+
+
+<?php
+
+if (isset($_POST['nom_route'],
+
+	$_POST['categorie_route'],
+
+	$_POST['longueur_route'],
+
+	$_POST['cout_route'],
+
+	$_POST['mise_en_service_route'],
+
+	$_POST['maitre_ouvrage'],
+
+	$_POST['maitre_ouvrage_de'],
+
+	$_POST['maitre_oeuvre'],
+
+	$_POST['entreprise_executante'])) {
+
+
+$req2 = $bdd->prepare('INSERT INTO voirie(nom_route, categorie_route, longueur_route, cout_route, mise_en_service_route, maitre_ouvrage, maitre_ouvrage_de, maitre_oeuvre, entreprise_executante) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)');
+
+
+$req2->execute(array(
+
+	$_POST['nom_route'],
+
+	$_POST['categorie_route'],
+
+	$_POST['longueur_route'],
+
+	$_POST['cout_route'],
+
+	$_POST['mise_en_service_route'],
+
+	$_POST['maitre_ouvrage'],
+
+	$_POST['maitre_ouvrage_de'],
+
+	$_POST['maitre_oeuvre'],
+
+	$_POST['entreprise_executante']
+
+));
+
+}
+
+?>
+
+
+
+
+<!-- Enregistrer les données du formulaire d'entretien -->
+
+
+<?php
+
+if (isset($_POST['type_entretien'],
+
+	$_POST['maitre_ouvrage_entretien'],
+
+	$_POST['maitre_ouvrage_de_entretien'],
+
+	$_POST['maitre_oeuvre_entretien'],
+
+	$_POST['entreprise_executante_entretien'],
+
+	$_POST['cout_entretien'],
+
+	$_POST['fin_travaux_entretien'],
+
+
+	$_POST['statut_entretien'])) {
+
+
+$req2 = $bdd->prepare('INSERT INTO voirie_entretien(type_entretien, maitre_ouvrage_entretien, maitre_ouvrage_de_entretien, maitre_oeuvre_entretien, entreprise_executante_entretien, cout_entretien, fin_travaux_entretien, statut_entretien) VALUES(?, ?, ?, ?, ?, ?, ?, ?)');
+
+
+$req2->execute(array(
+
+	$_POST['type_entretien'],
+
+	$_POST['maitre_ouvrage_entretien'],
+
+	$_POST['maitre_ouvrage_de_entretien'],
+
+	$_POST['maitre_oeuvre_entretien'],
+
+	$_POST['entreprise_executante_entretien'],
+
+	$_POST['cout_entretien'],
+
+	$_POST['fin_travaux_entretien'],
+
+	$_POST['statut_entretien']
+
+));
+
+}
+
+?>
+
+
+<!-- Enregistrer les données du formulaire d'un tronçon dégradé -->
+
+
+<?php
+
+if (isset($_POST['type_degats'],
+
+	$_POST['type_chaussee'],
+
+	$_POST['type_circulation'],
+
+	$_POST['longueur_troncon'],
+
+	$_POST['cout_eventuel_entretien'],
+
+	$_POST['ville_troncon'],
+
+	$_POST['quartier_troncon'])) {
+
+
+$req2 = $bdd->prepare('INSERT INTO voirie_degrade(type_degats, type_chaussee, type_circulation, longueur_troncon, cout_eventuel_entretien, ville_troncon, quartier_troncon) VALUES(?, ?, ?, ?, ?, ?, ?)');
+
+
+$req2->execute(array(
+
+	$_POST['type_degats'],
+
+	$_POST['type_chaussee'],
+
+	$_POST['type_circulation'],
+
+	$_POST['longueur_troncon'],
+
+	$_POST['cout_eventuel_entretien'],
+
+	$_POST['ville_troncon'],
+
+	$_POST['quartier_troncon']
+
+));
+
+}
+
+?>
+
+
+
+
+
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	
+
+	<script src="js/maintenance.js"></script>
+
+
+
+
+
+
+</body>
+</html>

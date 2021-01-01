@@ -1,0 +1,118 @@
+body
+{
+	background-image: url("images/cn.jpg");
+
+}
+form .champ_rech
+{
+	width: 590px;
+	position: relative;
+	left: 218px;
+	top: 30px;
+	border-radius: 300px;
+	text-align: center;
+}
+#iconerecherche
+{
+	position: relative;
+	right: 245px;
+	bottom:8px;
+
+}
+#bouton_rech
+{
+	background-color: #A9A9A9;
+	position: relative;
+	left: 250px;
+	bottom: 16px;
+	padding: 0 10px;
+	border-radius: 50px;
+	
+}
+#actualites
+{
+	width: 200px;
+	background: #412457;
+	position: relative;
+	left: 600px;
+	top: 55px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px 30px;
+	text-align: center;
+	letter-spacing: 2px;
+	line-height: 21px;
+}
+
+/* Mes slides d'actualités */
+.slide
+{
+	float: left; 
+}
+.slides
+{
+	width: calc(655px * 3); /*626*/
+	animation: glisse 14s infinite;
+}
+.slider
+{
+	width: 655px; /*626*/
+	height: 480px; /*400*/
+	overflow: hidden;
+	margin: 150px auto;
+	position: relative;
+	bottom: 20px;
+	left: 25px;
+}
+@keyframes glisse {
+	0% {
+		transform: translateX(0);
+	}
+	10% {
+		transform: translateX(0);
+	}
+	33% {
+		transform: translateX(-655px);
+	}
+	43% {
+		transform: translateX(-655px);
+	}
+	66% {
+		transform: translateX(-1310px);
+	}
+	76% {
+		transform: translateX(-1310px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+/* / Mes slides d'actualités */
+
+#abonnement_titre
+{
+	position: relative;
+	left: 230px;
+	bottom:30px;
+}
+#abonnement_saisie
+{
+	position: relative;
+	bottom: 20px;
+	left: 100px;
+	height: 45px;
+}
+#bouton_mail
+{
+	position: relative;
+	top: 43px;
+	left: 55px;
+	width: 45px;
+	padding: 0 3px;
+	
+}
+.survol a:hover
+{
+	font-size: 20px;
+	color: tomato;
+}

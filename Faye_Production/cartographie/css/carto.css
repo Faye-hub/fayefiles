@@ -1,0 +1,285 @@
+body
+{
+	margin :0; padding:0;
+	/*background-color: #eaf2f1;*/
+	font-family: Arial;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background: linear-gradient(to right, #eaf2f1, #eaf2f1 );
+	/*background: linear-gradient(to right, #3FB6A8, #7ED386);*/
+}
+#map
+{
+	 width: 890px; height: 590px;
+	 position: relative;
+	 left: 460px;
+	 bottom: 0;
+	 padding-bottom: 27px;
+	 
+	 position: fixed;
+}
+#fonds {
+position: relative;
+left: 30px;
+bottom: 100px;
+width: 160px;
+text-decoration: none;
+border: 0;
+background-color: transparent;
+}
+#fonds > label {
+	position: relative;
+	top: 90px;
+	left: 30px;
+	line-height: 10px;
+	cursor: pointer;
+	font-weight: 400;
+}
+
+label
+{
+	display: block;
+	position: relative;
+	bottom: 18px;
+  	padding-left: 28px;
+ 	margin-bottom: 7px;
+  	font-size: 14px;
+  	font-family: 'SourceSansPro-Light', sans-serif;
+  	text-transform: uppercase;
+
+}
+
+
+input
+{
+	position: relative;
+	top: 106px;
+	left: 20px;
+	cursor: pointer;
+	
+}
+/* Pour les marques de radio */
+	
+
+
+
+/* / Pour les marques de radio */
+#menu ul { 
+list-style-type: none;
+padding: 0; 
+margin: 0;
+background-color: #85b5ac;
+
+} 
+/* Pour les éléments du menu */
+#menu li { 
+display: inline-block;
+position: relative;
+left: 700px;
+text-transform: uppercase;
+font-family: cursive, sans-serif;
+} 
+/* / Pour les éléments du menu */
+#menu li a { 
+display: block; 
+padding: 10px; 
+color: #fff;
+text-decoration: none; 
+
+} 
+
+#menu li a:hover { 
+background-color: #aecdc8; 
+padding: 10px;
+}
+
+/* Menu tab */
+
+.tab_menu
+{
+	float: left;
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	top: 18px;
+
+}
+.tab_menu > input,
+.tab_menu section > div {
+	display: none;
+
+}
+#tab1:checked ~ section .tab1,
+#tab2:checked ~ section .tab2{
+	display: block;
+	border-radius: 5px;
+}
+*, *:after, *:before{
+	box-sizing: border-box;
+}
+.tab_menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	
+}
+.tab_menu ul li label{
+	float: left;
+	padding: 15px 30px;
+	border: 1px solid #ddd;
+	border-bottom: 0;
+	background-color: #eee;
+	color: #444;
+}
+.tab_menu ul li label:hover{
+	background-color: #ddd;
+}
+.tab_menu ul li label:active{
+	background-color: #fff;
+}
+.tab_menu ul li:not(:last-child) label{
+	border-right-width: 0;
+}
+.tab_menu section{
+	clear: both;
+}
+.tab_menu section div{
+	margin: 0;
+	width: 440px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	letter-spacing: 0.5px;
+	color: #444;
+	position: relative;
+	bottom: 25px;
+	height: 200px;
+}
+#tab1:checked ~ nav .tab1 label,
+#tab2:checked ~ nav .tab2 label{
+	background-color: #B0E0E6;
+	background: transparent;
+	color: #111;
+	position: relative;
+}
+#tab1:checked ~ nav .tab1 label:after,
+#tab2:checked ~ nav .tab2 label:after{
+	content: "";
+	display: block;
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	background-color: #b2fff4;
+	left:0;
+	bottom: -1px;
+}
+
+
+/* LÉGENDE */
+
+
+#bloc_legende{
+	position: relative;
+	top: 305px;
+	left: 100px;
+	
+}
+
+.nom_legende{
+	position: relative;
+	right: 90px;
+	border-bottom: 2px solid #111 ;
+	width: 5.3%;
+	bottom: 7.5em;
+
+}
+
+.elements_legende{
+	position: relative;
+	left: 100px;
+	bottom: 16em;
+}
+.ligne{
+	position: relative;
+	top: 50px;
+	left: 20px;
+	width: 70px;
+}
+
+#ligne_bonne{
+	text-decoration: underline;
+	border: 2px solid #34c924;
+	border-radius: 10px;
+	position: relative;
+	bottom: 200px;
+}
+#ligne_entretien{
+	text-decoration: underline;
+	border: 2px solid #582900;
+	border-radius: 10px;
+	position: relative;
+	bottom: 185px;
+}
+#ligne_fortement_degrade{
+	text-decoration: underline;
+	border: 2px solid #ea0e0e;
+	border-radius: 10px;
+	position: relative;
+	bottom: 170px;
+}
+#ligne_moyennement_degrade{
+	text-decoration: underline;
+	border: 2px solid #ff8300;
+	border-radius: 10px;
+	position: relative;
+	bottom: 160px;
+}
+#ligne_faiblement_degrade{
+	text-decoration: underline;
+	border: 2px solid #fdee00;
+	border-radius: 10px;
+	position: relative;
+	bottom: 150px;
+}
+/* / LÉGENDE */
+/*
+.slider{
+	width: 670px;
+	height: 400px;
+	overflow: hidden;
+	margin: 150px auto;
+	position: relative;
+	bottom: 40px;
+	right: 450px;
+
+}
+
+
+#images_bloc{
+	width: calc(670px * 3);
+	animation: glisse 14s infinite;
+}
+
+@keyframes glisse {
+	0% {
+		transform: translateX(0);
+	}
+	10% {
+		transform: translateX(0);
+	}
+	33% {
+		transform: translateX(-670px);
+	}
+	43% {
+		transform: translateX(-670px);
+	}
+	66% {
+		transform: translateX(-1340px);
+	}
+	76% {
+		transform: translateX(-1340px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+
+	*/

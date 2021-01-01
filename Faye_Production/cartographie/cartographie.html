@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Cartographie</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+<link rel="icon" type="image/png" href="icone_carto.png"/>
+
+		<!-- Open Layers -->
+		
+
+
+		<link rel="stylesheet" href="css/carto.css" />
+		
+		
+		<!-- Style for MAP -->
+		
+		<link href='https://api.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.css' rel='stylesheet' />
+
+	</head>
+
+
+	<body>
+
+
+
+				<!-- Header -->
+
+			<div id="menu">
+				<ul id="nav"> 
+					<li><a href="../index.php">Accueil</a></li> 
+					<li><a href="cartographie.php">Cartograhie</a></li> 
+					<li><a href="../intervenants.php">Intervenants</a></li>
+					<li><a href="../FORM/maintenance.php">Maintenance</a></li>
+					<li><a href="#">Mon profil</a></li> 
+				</ul>
+
+			</div>
+
+
+				<!-- / Header -->
+
+
+
+
+			<!-- TABBED MENU -->
+
+			<div class="tab_menu">
+
+				<input id="tab1" type="radio" name="pct" checked="checked"/>
+				<input id="tab2" type="radio" name="pct"/>
+				<nav>
+					<ul>
+						<li class="tab1">
+							<label for="tab1">Fonds de carte</label>
+						</li>
+						<li class="tab2">
+							<label for="tab2">Couches</label>
+						</li>
+					</ul>
+				</nav>
+
+
+				<section>
+
+
+
+					<div class="tab1">
+						
+
+				<!-- Fonds de carte -->
+								
+								<p>
+
+<div id='fonds'>
+								<input id='streets-v11' type='radio' name='rtoggle' value='streets' checked='checked'>
+								<label class="label_fonds" for='streets'>streets</label>
+
+								<input id='dark-v10' type='radio' name='rtoggle' value='dark'>
+								<label class="label_fonds" for='dark'>dark</label>
+
+								<input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
+								<label class="label_fonds" for='satellite'>satellite</label>
+
+</div>
+								</p>				
+
+				<!-- / Fonds de carte -->
+			
+						
+					</div>
+
+
+					<div class="tab2">
+						
+						<p>  </p>
+						<p>  </p>
+						<p>  </p>
+
+					</div>
+
+
+
+				</section>
+
+			
+
+			</div>
+
+
+				<!-- / TABBED MENU -->
+
+
+			<!-- Displaying pictures on click -->
+<!--
+<div class="slider">
+	<div id="images_bloc">
+
+		<div id="" class="a_slide">
+			<img id="pic2" src="on.jpg">
+		</div>
+
+		<div id="" class="a_slide">
+			<img id="pic2" src="on1.jpg">
+		</div>
+
+		<div id="" class="a_slide">
+			<img id="pic2" src="on2.png">
+		</div>
+
+	</div>
+
+</div>
+
+-->
+			<!-- LÉGENDE -->
+
+
+
+<div id="bloc_legende">
+
+		<p class="nom_legende">Légende :</p>
+			
+
+		<div class="ligne">
+
+			<p id="ligne_bonne"></p>
+			<p id="ligne_entretien"></p>
+			<p id="ligne_fortement_degrade"></p>
+			<p id="ligne_moyennement_degrade"></p>
+			<p id="ligne_faiblement_degrade"></p>
+
+		</div>
+
+		
+		<div class="elements_legende">
+		
+			<p>Route en bon état</p>
+			<p>Tronçon en entretien</p>
+			<p>Tronçon fortement dégradé</p>
+			<p>Tronçon moyennement dégradé</p>
+			<p>Tronçon faiblement dégradé</p>
+		
+		</div>
+
+
+</div>
+
+			<!-- / LÉGENDES -->
+
+			
+				 
+			<!-- My MAP -->
+				<div id="map"></div>
+
+
+
+
+
+		<!-- Scripts for MAP -->
+
+		<script src='https://api.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.js'></script>
+		<script src="js/carto.js"></script>
+		<script src="js/display.js"></script>
+
+
+			
+
+
+
+
+		
+
+			
+
+	</body>
+</html>

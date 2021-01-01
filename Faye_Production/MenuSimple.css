@@ -1,0 +1,33 @@
+body{
+	overflow-x: hidden;
+}
+#menu ul { 
+position: fixed;
+left: 0;
+width: 100%;
+
+list-style-type: none;
+background-color: #85b5ac;
+
+} 
+/* Pour les éléments du menu */
+#menu li { 
+display: inline-block;
+position: relative;
+left: 680px;
+text-transform: uppercase;
+font-family: cursive, sans-serif;
+} 
+/* / Pour les éléments du menu */
+#menu li a { 
+display: block; 
+padding: 10px; 
+color: #fff;
+text-decoration: none; 
+
+} 
+
+#menu li a:hover { 
+background-color: #aecdc8; 
+padding: 10px;
+}

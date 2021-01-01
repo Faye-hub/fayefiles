@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Intervenants</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="icones/intervenant.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="intervenants/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="intervenants/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="intervenants/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="intervenants/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="intervenants/vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="intervenants/css/util.css">
+	<link rel="stylesheet" type="text/css" href="intervenants/css/main.css">
+<!--===============================================================================================-->
+
+	<!-- My STYLE -->
+	
+	<link rel="stylesheet" type="text/css" href="intervenants/css/intervenants.css">
+
+
+</head>
+<body>
+
+<!-- LE MENU NAV HORIZONTAL FIXÉ EN HAUT -->
+			
+	<?php include("MenuSimple.php"); ?>
+
+<!-- / LE MENU NAV HORIZONTAL FIXÉ EN HAUT -->
+
+
+	
+<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1_fin">Partenaires financiers</th>
+									<th class="cell100 column2_fin">Projets financés</th>
+									<th class="cell100 column3_fin">Type de financement</th>
+									<th class="cell100 column4_fin">Investissement</th>
+									<th class="cell100 column5_fin">Consistance</th>
+									<th class="cell100 column6_fin">Taux d'intérêt</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+								<tr class="row100 body">
+
+	<td class="cell100 column1_partfin">
+
+	<?php $part_fin = $bdd->query('SELECT part_fin FROM partenaires_financiers');
+	while ( $liste_part = $part_fin->fetch())
+	{
+		echo $liste_part['part_fin'].'<br/>'.'<br/>';
+	}
+
+    ?>
+ 
+	</td>
+
+	<td class="cell100 column2_partfin">
+
+	<?php $prjts_fin = $bdd->query('SELECT projets_fin FROM partenaires_financiers');
+	while ( $liste_prjts = $prjts_fin->fetch())
+	{
+		echo $liste_prjts['projets_fin'].'<br/>'.'<br/>';
+	}
+
+    ?>
+		
+	</td>
+		
+	<td class="cell100 column3_partfin">
+	
+	<?php $type_fin = $bdd->query('SELECT type_de_fin FROM partenaires_financiers');
+	while ( $liste_type = $type_fin->fetch())
+	{
+		echo $liste_type['type_de_fin'].'<br/>'.'<br/>';
+	}
+
+    ?>
+
+
+
+	</td>
+	
+
+	<td class="cell100 column4_partfin">
+	
+	<?php $investissement = $bdd->query('SELECT investment FROM partenaires_financiers');
+	while ( $liste_investment = $investissement->fetch())
+	{
+		echo $liste_investment['investment'].'<br/>'.'<br/>';
+	}
+
+    ?>
+
+	</td>
+	
+
+	<td class="cell100 column5_partfin">
+	
+	<?php $consistance = $bdd->query('SELECT consistance FROM partenaires_financiers');
+	while ( $liste_consistance = $consistance->fetch())
+	{
+		echo $liste_consistance['consistance'].'<br/>'.'<br/>';
+	}
+
+    ?>
+
+	</td>
+
+	<td class="cell100 column6_partfin">
+	
+	<?php $interest_rate = $bdd->query('SELECT taux_interet FROM partenaires_financiers');
+	while ( $liste_rate = $interest_rate->fetch())
+	{
+		echo $liste_rate['taux_interet'].'<br/>'.'<br/>';
+	}
+
+    ?>
+
+	</td>
+
+
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<!--
+
+				<div class="table100 ver2 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Partenaires financiers</th>
+									<th class="cell100 column2"></th>
+									<th class="cell100 column3"></th>
+									<th class="cell100 column4"></th>
+									<th class="cell100 column5"></th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+								<tr class="row100 body">
+									<td class="cell100 column1"></td>
+									<td class="cell100 column2"></td>
+									<td class="cell100 column3"></td>
+									<td class="cell100 column4"></td>
+									<td class="cell100 column5"></td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+				
+					-->
+<!--
+				<div class="table100 ver3 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1_oe">Maître d'oeuvre</th>
+									<th class="cell100 column2_oe">Projets_supervisés</th>
+									<th class="cell100 column3_oe">Consistance</th>
+									<th class="cell100 column4_oe">ABE</th>
+									<th class="cell100 column5_oe">Service</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+						
+								<tr class="row100 body">
+									<td class="cell100 col1_oe"></td>
+									<td class="cell100 col2_oe"></td>
+									<td class="cell100 col3_oe"></td>
+									<td class="cell100 col4_oe"></td>
+									<td class="cell100 col5_oe"></td>
+									<td class="cell100 col6_oe"></td>
+									<td class="cell100 col7_oe"></td>
+									<td class="cell100 col8_oe"></td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+-->
+				<div class="table100 ver4 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1_ex">Entreprise exécutante</th>
+									<th class="cell100 column2_ex">Projets réalisés</th>
+									<th class="cell100 column3_ex">Consistance</th>
+									<th class="cell100 column4_ex">ABE</th>
+									<th class="cell100 column5_ex">Service</th>
+									<th class="cell100 column6_ex">Durée de vie</th>
+									<th class="cell100 column7_ex">État actuel</th>
+									<th class="cell100 column8_ex">Plan de charge</th>
+									<th class="cell100 column9_ex">Maître d'oeuvre</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+								<tr id="rn" class="row100 body">
+									
+<td id="col1_ex" class="cell100 column1">
+	
+	<?php $ent_ex = $bdd->query('SELECT entreprise_executante FROM voirie');
+	while ( $liste_ex = $ent_ex->fetch())
+	{
+		echo $liste_ex['entreprise_executante'].'<br/>'.'<br/>';
+	}
+
+    ?>
+  	
+</td>
+
+<td id="col2_ex" class="cell100 column2">
+
+<?php $voies_realisees = $bdd->query('SELECT nom_route FROM voirie');
+	
+	while ( $liste_voies = $voies_realisees->fetch())
+	{
+		echo $liste_voies['nom_route'].'<br/>'.'<br/>';
+	}
+
+?>										
+
+</td>
+
+<td id="col3_ex" class="cell100 column3">
+	
+	<?php $consistance = $bdd->query('SELECT consist_travx_ex FROM voirie');
+	
+	while ( $liste_voies = $consistance->fetch())
+	{
+		echo $liste_voies['consist_travx_ex'].'<br/>'.'<br/>';
+	}
+
+?>	
+	
+
+</td>
+
+		<td id="col4_ex" class="cell100 column4">
+
+	<?php $abe_ent_ex = $bdd->query('SELECT abe_ent_ex FROM voirie');
+	
+	while ( $liste_abe = $abe_ent_ex->fetch())
+	{
+		echo $liste_abe['abe_ent_ex'].'<br/>'.'<br/>';
+	}
+
+	?>
+		
+</td>
+									
+									
+<td id="col5_ex" class="cell100 column5">
+	
+	<?php $mise_en_service = $bdd->query('SELECT mise_en_service_route FROM voirie');
+	
+	while ( $liste_annee = $mise_en_service->fetch())
+	{
+		echo $liste_annee['mise_en_service_route'].'<br/>'.'<br/>';
+	}
+
+	?>
+
+</td>
+
+<td id="col6_ex" class="cell100 column6">
+
+	<?php $duree_vie = $bdd->query('SELECT duree_de_vie_ex FROM voirie');	
+	
+	while ( $liste_duree_vie = $duree_vie->fetch())
+	{
+		echo $liste_duree_vie['duree_de_vie_ex'].'<br/>'.'<br/>';
+	}
+
+	?>
+	
+</td>
+
+<td id="col7_ex" class="cell100 column7">
+
+	<?php $etat_actuel = $bdd->query('SELECT etat_actuel_voirie_ex FROM voirie');
+	
+	while ( $liste_etat_actuel = $etat_actuel->fetch())
+	{
+		echo $liste_etat_actuel['etat_actuel_voirie_ex'].'<br/>'.'<br/>';
+	}
+
+	?>
+	
+</td>
+
+<td id="col8_ex" class="cell100 column8">
+
+	<?php $plan_charge = $bdd->query('SELECT plan_de_charge_ex FROM voirie');
+	
+	while ( $liste_charge = $plan_charge->fetch())
+	{
+		echo $liste_charge['plan_de_charge_ex'].'<br/>'.'<br/>';
+	}
+
+	?>
+
+</td>
+
+<td id="col9_ex" class="cell100 column9">
+
+<?php $moe = $bdd->query('SELECT maitre_oeuvre FROM voirie');
+	
+	while ( $liste_moe = $moe->fetch())
+	{
+		echo $liste_moe['maitre_oeuvre'].'<br/>'.'<br/>';
+	}
+
+?>										
+
+</td>
+	
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!--===============================================================================================-->	
+	<script src="intervenants/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="intervenants/vendor/bootstrap/js/popper.js"></script>
+	<script src="intervenants/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="intervenants/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="intervenants/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script>
+		
+		$('.js-pscroll').each(function(){
+			var ps = new PerfectScrollbar(this);
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+		});
+			
+		
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+<script src="intervenants/js/intervenants.js"></script>
+
+</body>
+</html>
